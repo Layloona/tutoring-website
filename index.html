@@ -54,19 +54,15 @@
     <p>Got a question or ready to start tutoring? Fill out this form, and I’ll get back to you within 24 hours!</p>
 
     <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
-    
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required />
-    
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" name="email" required />
-    
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" required></textarea>
-    
-      <button type="submit">Send Inquiry</button>
-    </form>    
+      <!-- this hides the spam-bot honey trap -->
+      <input type="hidden" name="_captcha" value="false">
+      <div class="form-grid">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <textarea name="message" placeholder="Your message or inquiry..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
