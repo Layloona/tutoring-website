@@ -2,265 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LightPink Tutoring</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <style>
-    /* reset and base */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background: #fff0f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* header */
-    header {
-      background: #ffc0cb;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      color: white;
-      font-size: 3rem;
-      font-weight: 700;
-    }
-
-    /* nav */
-    nav {
-      background: #ffe4e1;
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-      padding: 1rem 0;
-      font-weight: 600;
-    }
-    nav a {
-      color: #d6336c;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #b42b5d;
-    }
-
-    /* hero */
-    .hero {
-      max-width: 1200px;
-      margin: 3rem auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-      padding: 0 1rem;
-    }
-    .hero-text {
-      flex: 1 1 400px;
-    }
-    .hero-text h2 {
-      font-size: 2.8rem;
-      color: #d6336c;
-      margin-bottom: 1rem;
-    }
-    .hero-text p {
-      font-size: 1.2rem;
-      color: #444;
-    }
-    .hero-img {
-      flex: 1 1 400px;
-      text-align: center;
-    }
-    .hero-img img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(214, 51, 108, 0.3);
-    }
-
-    /* sections */
-    section {
-      max-width: 1100px;
-      margin: 4rem auto;
-      padding: 0 1rem;
-    }
-    section h3 {
-      text-align: center;
-      font-size: 2.4rem;
-      color: #d6336c;
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-    }
-
-    /* cards for content */
-    .card {
-      background: white;
-      border: 2px solid #ffc0cb;
-      border-radius: 14px;
-      padding: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      max-width: 700px;
-      margin: 1rem auto;
-    }
-
-    /* service list */
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-      color: #555;
-      font-size: 1.1rem;
-    }
-
-    /* testimonials */
-    .testimonial {
-      max-width: 700px;
-      background: white;
-      border-left: 6px solid #d6336c;
-      margin: 1rem auto;
-      padding: 1.5rem 2rem;
-      border-radius: 8px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.04);
-      color: #444;
-      font-style: italic;
-      font-size: 1.1rem;
-    }
-    .testimonial strong {
-      font-style: normal;
-      color: #d6336c;
-    }
-
-    /* contact form */
-    form {
-      max-width: 600px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-    input, textarea {
-      padding: 0.85rem 1rem;
-      border-radius: 10px;
-      border: 1.5px solid #ccc;
-      font-size: 1rem;
-      resize: vertical;
-    }
-    input:focus, textarea:focus {
-      border-color: #d6336c;
-      outline: none;
-      box-shadow: 0 0 8px rgba(214, 51, 108, 0.3);
-    }
-    button {
-      background: #d6336c;
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 700;
-      padding: 1rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: #b42b5d;
-    }
-
-    /* footer */
-    footer {
-      background: #ffc0cb;
-      color: white;
-      text-align: center;
-      padding: 1.2rem;
-      margin-top: 4rem;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    /* responsive tweaks */
-    @media(max-width: 768px) {
-      .hero {
-        flex-direction: column;
-      }
-      .hero-text, .hero-img {
-        flex: 1 1 100%;
-        padding: 0;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lana's Tutoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <h1>Your Trusted Tutor</h1>
+    <div class="container">
+      <h1>Lana's Tutoring</h1>
+      <p>friendly & effective tutoring for grades 1–5 💡</p>
+    </div>
   </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Subjects</a>
-    <a href="#testimonials">Reviews</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section class="hero">
     <div class="hero-text">
-      <h2>One-on-One Tutoring for Grades 1–5</h2>
-      <p>Personalized, friendly lessons that build confidence and skills in young learners through fun, interactive learning.</p>
+      <h2>Boost your child’s confidence in learning 📚</h2>
+      <p>I offer one-on-one sessions in math, reading, writing, and more — all tailored to each student’s pace, personality, and goals.</p>
+      <p>Let’s make learning stress-free and even a little fun ✨</p>
     </div>
     <div class="hero-img">
-      <img
-        src="https://stories.uq.edu.au/contact-magazine/2020/teaching-kids-from-home-top-10-tips/assets/S80wNFwc5V/uq-contact-teaching-from-home-tips-2-2121x1414.jpeg"
-        alt="Tutor helping young kids"
-        class="hero-img"
-      />
-    </div>
-  </section>  
-
-  <section id="about">
-    <h3>About Me</h3>
-    <div class="card">
-      <p>Hi! I'm a dedicated tutor passionate about helping young students grow and thrive. I specialize in English, Math, and Science, tailoring each lesson to your child’s learning style and pace. My goal is to make learning enjoyable and effective.</p>
+      <img src="https://stories.uq.edu.au/contact-magazine/2020/teaching-kids-from-home-top-10-tips/assets/S80wNFwc5V/uq-contact-teaching-from-home-tips-2-2121x1414.jpeg" alt="Tutor helping young kids" />
     </div>
   </section>
 
-  <section id="services">
-    <h3>Subjects I Teach</h3>
-    <div class="card">
-      <ul>
-        <li>English Language & Reading</li>
-        <li>Basic Math & Problem Solving</li>
-        <li>Science Explorations</li>
-        <li>Homework Help & Revision</li>
-        <li>Creative Writing & Storytelling</li>
-      </ul>
+  <section class="offerings">
+    <h2>What I Offer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📖 Reading Help</h3>
+        <p>Improving fluency, comprehension, and vocabulary with interactive methods that keep young minds engaged.</p>
+      </div>
+      <div class="card">
+        <h3>✍️ Writing Skills</h3>
+        <p>From grammar to creative storytelling, I help students write clearly and confidently.</p>
+      </div>
+      <div class="card">
+        <h3>➕ Math Support</h3>
+        <p>Making math less scary! I simplify concepts and use real-life examples to build number sense.</p>
+      </div>
+      <div class="card">
+        <h3>📅 Flexible Scheduling</h3>
+        <p>Evening and weekend slots available to fit your family’s needs, online or in-person (depending on location).</p>
+      </div>
     </div>
   </section>
 
-  <section id="testimonials">
-    <h3>What Parents Say</h3>
-    <div class="testimonial">
-      <p><strong>Sarah:</strong> "My son improved his grades within a month! Super friendly and helpful."</p>
-    </div>
-    <div class="testimonial">
-      <p><strong>Ahmed:</strong> "The lessons are fun and my daughter loves her tutor. Highly recommend!"</p>
-    </div>
-  </section>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Got a question or ready to start tutoring? Fill out this form, and I’ll get back to you within 24 hours!</p>
 
-  <section id="contact">
-    <h3>Contact Me</h3>
-    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <textarea name="Message" rows="5" placeholder="How can I help?" required></textarea>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+    
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+    
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+    
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    
       <button type="submit">Send Inquiry</button>
-    </form>
+    </form>    
   </section>
 
   <footer>
-    &copy; 2025 Your Tutoring Name | All Rights Reserved
+    <p>&copy; 2025 Lana's Tutoring | All rights reserved.</p>
   </footer>
-
 </body>
 </html>
